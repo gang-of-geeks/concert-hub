@@ -25,7 +25,7 @@ const values = ref([
     image:
       'https://static.vecteezy.com/system/resources/thumbnails/025/061/745/small_2x/4k-beautiful-colorful-abstract-wallpaper-photo.jpg',
   },
-])
+]);
 
 const goToNextSlide = () => {
   const swiper = document.querySelector('#mySwiper')?.swiper
