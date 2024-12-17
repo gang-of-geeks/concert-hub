@@ -12,6 +12,7 @@
   "dependencies": {
     "@nuxt/image": "^1.8.1",
     "@nuxtjs/tailwindcss": "^6.12.2",
+    "@nuxtjs/vercel-builder": "^0.25.0",
     "nuxt": "^3.14.1592",
     "swiper": "^11.1.15",
     "typescript": "^5.7.2",
