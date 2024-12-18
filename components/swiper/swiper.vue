@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from 'swiper/vue'
-
-
+import 'swiper/css/navigation';
+import 'swiper/css'
+import 'swiper/css/pagination'
 
 interface props {
   direction: "horizontal" | "vertical",
   swiperSlideClass?: string
+  navigation?: boolean
   modules: any[],
   values: {
     image: string
@@ -22,6 +24,7 @@ defineProps<props>()
     }"
     :modules="modules"
     :loop="true"
+    :navigation="navigation"
   >
     <SwiperSlide
       v-for="(items, key) in values"

@@ -4,6 +4,7 @@ import Swiper from '~/components/swiper/swiper.vue'
 import { Pagination, Mousewheel } from 'swiper/modules'
 import ShowCelebrities from '~/components/showCelebrities.vue'
 import ExploreByCategory from '~/components/explore-by-category.vue'
+import Artists from '~/components/artists.vue'
 
 const values = ref([
   {
@@ -141,6 +142,11 @@ const goToPrevSlide = () => {
         <div class="part3">
           <ExploreByCategory :values="values" subject="Explore by category" />
         </div>
+      </div>
+    </div>
+    <div class="container-3 mt-24">
+      <div class="wrapper">
+        <Artists :values="values"  subject="Artists"/>
       </div>
     </div>
   </div>
